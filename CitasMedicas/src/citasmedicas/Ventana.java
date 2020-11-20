@@ -150,8 +150,10 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // ABRIRPACIENTE
-        JOptionPane.showInputDialog("INGRESA EL DOCUMENTO DEL PACIENTE");
+      Abrirpaciente Ap1=new Abrirpaciente();
+        Escritorio.add(Ap1);
+        Ap1.show();
+
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void AbrirdoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirdoctorActionPerformed
