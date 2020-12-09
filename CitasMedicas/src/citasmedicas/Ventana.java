@@ -32,146 +32,50 @@ public class Ventana extends javax.swing.JFrame {
 
         jMenu1 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        Escritorio = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu2 = new javax.swing.JMenu();
-        Abrirdoctor = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        Abrirpaciente = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        Opcionnuevopaciente = new javax.swing.JMenuItem();
+        jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuBar3 = new javax.swing.JMenuBar();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuBar1 = new javax.swing.JMenuBar();
 
         jMenu1.setText("jMenu1");
 
         jMenuItem4.setText("jMenuItem4");
 
-        jMenuItem2.setText("jMenuItem2");
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
 
-        jMenuItem3.setText("jMenuItem3");
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
+
+        jMenu6.setText("File");
+        jMenuBar3.add(jMenu6);
+
+        jMenu7.setText("Edit");
+        jMenuBar3.add(jMenu7);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Formulario");
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout EscritorioLayout = new javax.swing.GroupLayout(Escritorio);
-        Escritorio.setLayout(EscritorioLayout);
-        EscritorioLayout.setHorizontalGroup(
-            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 532, Short.MAX_VALUE)
-        );
-        EscritorioLayout.setVerticalGroup(
-            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 501, Short.MAX_VALUE)
-        );
-
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/doctor.png"))); // NOI18N
-        jMenu2.setText("Doctor");
-
-        Abrirdoctor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        Abrirdoctor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/abrir-esquema-de-carpeta.png"))); // NOI18N
-        Abrirdoctor.setText("Abrir");
-        Abrirdoctor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AbrirdoctorActionPerformed(evt);
-            }
-        });
-        jMenu2.add(Abrirdoctor);
-
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/boton-agregar.png"))); // NOI18N
-        jMenuItem5.setText("Agregar");
-        jMenu2.add(jMenuItem5);
-
-        jMenuBar1.add(jMenu2);
-
-        Abrirpaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/hospitalizacion.png"))); // NOI18N
-        Abrirpaciente.setText("Paciente");
-
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/abrir-esquema-de-carpeta.png"))); // NOI18N
-        jMenuItem1.setText("Abrir");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        Abrirpaciente.add(jMenuItem1);
-
-        Opcionnuevopaciente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
-        Opcionnuevopaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/boton-agregar.png"))); // NOI18N
-        Opcionnuevopaciente.setText("Agregar");
-        Opcionnuevopaciente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OpcionnuevopacienteActionPerformed(evt);
-            }
-        });
-        Abrirpaciente.add(Opcionnuevopaciente);
-
-        jMenuBar1.add(Abrirpaciente);
-
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/puesto-de-trabajo.png"))); // NOI18N
-        jMenu3.setText("Consultorio");
-
-        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/abrir-esquema-de-carpeta.png"))); // NOI18N
-        jMenuItem7.setText("Abrir");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem7);
-
-        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/boton-agregar.png"))); // NOI18N
-        jMenuItem6.setText("Agregar");
-        jMenu3.add(jMenuItem6);
-
-        jMenuBar1.add(jMenu3);
-
+        setMaximumSize(new java.awt.Dimension(500, 500));
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Escritorio)
+            .addGap(0, 397, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Escritorio)
+            .addGap(0, 498, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // ABRIRPACIENTE
-        JOptionPane.showInputDialog("INGRESA EL DOCUMENTO DEL PACIENTE");
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void AbrirdoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirdoctorActionPerformed
-        // ABRIRDOCTOR:
-        JOptionPane.showInputDialog("INGRESA ID DEL DOCTOR");
-        
-    }//GEN-LAST:event_AbrirdoctorActionPerformed
-
-    private void OpcionnuevopacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpcionnuevopacienteActionPerformed
-        //AGREGAR UN PACIENTE
-        AgregarPaciente p1= new  AgregarPaciente();
-        Escritorio.add(p1);
-        p1.show();
-        
-        
-    }//GEN-LAST:event_OpcionnuevopacienteActionPerformed
-
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,20 +113,14 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem Abrirdoctor;
-    private javax.swing.JMenu Abrirpaciente;
-    private javax.swing.JDesktopPane Escritorio;
-    private javax.swing.JMenuItem Opcionnuevopaciente;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     // End of variables declaration//GEN-END:variables
 }
